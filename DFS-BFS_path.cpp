@@ -315,15 +315,15 @@ int main()
      dst = n*(dx-1) + dy-1;
     }
 
-    cout<<"maze solution with dfs is"<<endl;
 
+   solve_bfs ob(obj);
+    cout<<"maze solution with bfs is"<<endl;
+     ob.solutionbfs(src,dst);
+     cout<<endl;
+
+    cout<<"maze solution with dfs is"<<endl;
     obj.getsolution(src,dst);
 
-    solve_bfs ob(obj);
-    cout<<endl;
-    cout<<"maze solution with bfs is"<<endl;
-
-    ob.solutionbfs(src,dst);
 
 return 0;
 }
